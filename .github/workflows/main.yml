@@ -1,0 +1,16 @@
+name: Check Ubuntu Runner
+
+on: [push]
+
+jobs:
+  explore:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show system info
+        run: |
+          uname -a
+          lsb_release -a
+          df -h
+          free -m
+          whoami
+          pwd
